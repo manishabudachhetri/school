@@ -6,34 +6,14 @@ import './App.css';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 
-// Home Page Components
-import Hero from './components/home/Hero';
-import About from './components/home/About';
-import QuickQueries from './components/home/QuickQueries';
-import Stats from './components/home/Stats';
-import Events from './components/home/Events';
-import Team from './components/home/Team';
-import Reviews from './components/home/Reviews';
+// Pages
+import HomePage from './pages/Home';
+import AboutUs from './pages/Aboutus';
+import Gallery from './pages/Gallery';
+import ContactUs from './pages/Contactus';
+import Courses from './pages/Courses';
+import Certificate from './pages/Certificate';
 
-
-
-
-// Home Page
-const HomePage = () => (
-  <>
-    <Hero />
-    <About />
-    <QuickQueries />
-    <Stats />
-    <Events />
-    <Team />
-    <Reviews />
-   
-   
-  </>
-);
-
-// Main App Component
 const App = () => {
   return (
     <Router>
@@ -42,7 +22,11 @@ const App = () => {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage />} />
-        
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/certificate" element={<Certificate />} />
           </Routes>
         </main>
         <Footer />

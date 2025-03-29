@@ -67,7 +67,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="footer-divider">
           <div className="flex flex-col md:flex-row justify-between">
-            <p className="footer-copyright">Copyright @ 2024 All Right Reserved | Developed By <a href="https://unlein.com" className="text-primary">UNLEIN Pvt Ltd</a></p>
+            <p className="footer-copyright">Copyright @ 2024 All Right Reserved | Developed By <a href="https://unlein.com" className="text-primary">SCHOOL Pvt Ltd</a></p>
             <div className="footer-bottom-links flex space-x-4 mt-3 md:mt-0">
               <Link to="/privacy-policy">Privacy Policy</Link>
               <Link to="/terms-conditions">Terms & Conditions</Link>
